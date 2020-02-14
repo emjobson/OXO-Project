@@ -218,11 +218,11 @@ class City {
 		const radius = 600;
 
 		//if we are less than 600 meters from the western border, add "w" to near_borders
-		var west = Math.abs(bounds_p[sw][lon] - bounds_a[sw][lon]) < 600;
+		var west = Math.abs(bounds_p[ne][lon] - bounds_a[sw][lon]) < 600;
 		if (west)
 			near_borders.push("w");
 
-		var south = Math.abs(bounds_p[sw][lat] - bounds_a[sw][lat] < 600
+		var south = Math.abs(bounds_p[ne][lat] - bounds_a[sw][lat] < 600
 		if (south)
 			near_borders.push("s");
 
