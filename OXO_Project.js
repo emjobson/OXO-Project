@@ -227,7 +227,7 @@ class City {
 			near_borders.push("s");
 
 		//corner case: if we are close to the western and southern borders, add "sw" to near_borders
-		if(south & west)
+		if(south && west)
 			near_borders.push("sw");
 
 		/* -- repeat for each of the other directions (N, S, E , NE, NW, SE)-- */
